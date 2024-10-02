@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "squidwalk",
+	"version": "${version}",
+	"name": "SquidWalk",
+	"description": "Prompt: You should make it so squids are able to come on land and attack the nearest player without getting hurt.",
+	"authors": [
+		"RadientFox"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/squidwalk/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.squidwalk.SquidWalk"
+		],
+		"client": [
+			"net.squidwalk.SquidWalkClient"
+		],
+		"fabric-datagen": [
+			"net.squidwalk.SquidWalkDataGenerator"
+		]
+	},
+	"mixins": [
+		"squidwalk.mixins.json",
+		{
+			"config": "squidwalk.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
