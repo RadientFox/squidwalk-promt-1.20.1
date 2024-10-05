@@ -26,17 +26,15 @@
 		]
 	},
 	"mixins": [
-		"squidwalk.mixins.json",
-		{
-			"config": "squidwalk.client.mixins.json",
-			"environment": "client"
-		}
+		"squidwalk.mixins.json"
+
 	],
 	"depends": {
 		"fabricloader": ">=0.16.5",
 		"minecraft": "~1.20.1",
 		"java": ">=17",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"geckolib": ">=4.4.9"
 	},
 	"suggests": {
 		"another-mod": "*"

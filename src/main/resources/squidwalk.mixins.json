@@ -3,7 +3,7 @@
 	"package": "net.squidwalk.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"SquidChangeMixin"
+"ExampleClientMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
